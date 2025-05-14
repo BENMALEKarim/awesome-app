@@ -4,7 +4,7 @@ import os
 app = Flask(__name__)
 
 # Get config from environment variables
-MESSAGE = "Hello all, Version: " + os.getenv("APP_VERSION")
+MESSAGE = "Hello from: " + os.getenv("APP_VERSION")
 BACKGROUND_COLOR = os.getenv("BACKGROUND_COLOR")
 
 @app.route('/')
